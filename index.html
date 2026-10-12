@@ -6,6 +6,12 @@
   <meta name="description" content="Sean KimKwon — Fellow, Center for Law and the Economy">
   <title>Sean KimKwon</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+  if (!sessionStorage.getItem("visited")) {
+    document.documentElement.classList.add("intro");
+    sessionStorage.setItem("visited", "yes");
+  }
+</script>
 </head>
 <body>
   <header>
