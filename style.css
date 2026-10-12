@@ -184,7 +184,19 @@ header {
 .paper:hover {
   transform: translateX(6px);
 }
+/* Welcome fade-in on first visit */
+@keyframes intro-fade {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 
+.intro header {
+  animation: intro-fade 0.8s ease both;
+}
+
+.intro main {
+  animation: intro-fade 1s ease 0.25s both;
+}
 /* Turn animations off for visitors who prefer less motion */
 @media (prefers-reduced-motion: reduce) {
   *,
