@@ -1,8 +1,8 @@
 :root {
-  --text: #1a1a1a;
-  --muted: #666;
-  --accent: #1d4e89;
-  --border: #e5e5e5;
+  --text: #10233a;
+  --muted: #3b5068;
+  --accent: #0b3d7a;
+  --border: #9cc3da;
 }
 
 * { box-sizing: border-box; }
@@ -12,7 +12,7 @@ body {
   font-family: Georgia, "Times New Roman", serif;
   color: var(--text);
   line-height: 1.7;
-  background: #fff;
+  background: #B9D9EB;
 }
 
 header {
