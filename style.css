@@ -197,6 +197,22 @@ header {
 .intro main {
   animation: intro-fade 1s ease 0.25s both;
 }
+/* Contact icons */
+.links {
+  gap: 1.1rem;
+  align-items: center;
+}
+
+.links a {
+  font-size: 1.5rem;
+  color: var(--accent);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.links a:hover {
+  color: var(--text);
+  transform: translateY(-3px);
+}
 /* Turn animations off for visitors who prefer less motion */
 @media (prefers-reduced-motion: reduce) {
   *,
