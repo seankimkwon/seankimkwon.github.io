@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV | Sean KimKwon</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+  if (!sessionStorage.getItem("visited")) {
+    document.documentElement.classList.add("intro");
+    sessionStorage.setItem("visited", "yes");
+  }
+</script>
 </head>
 <body>
   <header>
