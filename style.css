@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap');
 :root {
   --text: #10233a;
   --muted: #3b5068;
@@ -31,12 +32,12 @@ header {
 }
 
 .nav .site-name {
-  font-weight: bold;
-  font-size: 1.15rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  font-size: 1.6rem;
   color: var(--text);
   text-decoration: none;
 }
-
 .nav ul {
   list-style: none;
   display: flex;
