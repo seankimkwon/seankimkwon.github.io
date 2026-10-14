@@ -3,15 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curriculum vitae of Sean KimKwon, Fellow at the Center for Law and the Economy, Columbia Law School.">
+  <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1b29" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CV | Sean KimKwon">
+  <meta property="og:description" content="Curriculum vitae of Sean KimKwon, Fellow at the Center for Law and the Economy, Columbia Law School.">
+  <meta property="og:url" content="https://seankimkwon.com/cv.html">
+  <meta property="og:image" content="https://seankimkwon.com/headshot.jpg">
+  <meta name="twitter:card" content="summary">
   <title>CV | Sean KimKwon</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <script>
-  if (!sessionStorage.getItem("visited")) {
-    document.documentElement.classList.add("intro");
-    sessionStorage.setItem("visited", "yes");
-  }
-</script>
+    if (!sessionStorage.getItem("visited")) {
+      document.documentElement.classList.add("intro");
+      sessionStorage.setItem("visited", "yes");
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -20,19 +29,22 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="research.html">Research</a></li>
-        <li><a href="cv.html" class="active">CV</a></li>
+        <li><a href="cv.html" aria-current="page">CV</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <h1>Curriculum Vitae</h1>
-    <p><a href="cv.pdf">Download CV (PDF)</a></p>
-    <iframe src="cv.pdf" width="100%" height="900" style="border:1px solid #e5e5e5;"></iframe>
+    <p class="cv-actions">
+      <a class="cv-button" href="cv.pdf">Open CV (PDF)</a>
+      <a href="cv.pdf" download="Sean-KimKwon-CV.pdf">Download</a>
+    </p>
+    <iframe class="cv-preview" src="cv.pdf" title="Curriculum Vitae of Sean KimKwon (PDF preview)"></iframe>
   </main>
 
   <footer>© 2026 Sean KimKwon</footer>
-     <script data-goatcounter="https://seankimkwon.goatcounter.com/count"
-           async src="//gc.zgo.at/count.js"></script>
+  <script data-goatcounter="https://seankimkwon.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
