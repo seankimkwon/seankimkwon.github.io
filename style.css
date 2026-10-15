@@ -166,6 +166,8 @@ footer {
 
 .sidebar h1 { margin: 1.25rem 0 0.5rem; }
 .sidebar .title { margin: 0; color: var(--muted); white-space: nowrap; }
+/* Role in full text colour; the school line below stays muted */
+.sidebar .title:first-of-type { color: var(--text); }
 
 /* Contact icons: 20px glyph centred in a 40×44px tap target.
    The negative margin keeps the first icon lined up with the text above. */
@@ -294,6 +296,7 @@ main > p {
     margin-top: 0.75rem;
     padding: 0;
     border: 0;
+    font-size: 0.7rem;
   }
   .degrees p { margin: 0; }
   .sidebar .title { white-space: normal; line-height: 1.5; font-size: 0.95rem; }
