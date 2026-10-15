@@ -272,9 +272,27 @@ main > p {
 
 @media (max-width: 700px) {
   main { padding: 2rem 1.5rem; }
-  .profile { grid-template-columns: 1fr; gap: 2rem; }
-  .profile img { max-width: 160px; }
-  .sidebar .title { white-space: normal; }
+  .profile { grid-template-columns: 1fr; gap: 1.75rem; }
+  /* Photo on the left with name, title and icons beside it; degrees run full width below */
+  .sidebar {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    column-gap: 1rem;
+    align-items: start;
+  }
+  /* Trim the icons' tap-target padding at the bottom so the text block ends where the photo does */
+  .sidebar .links { flex-wrap: wrap; margin: 0.4rem 0 -12px -10px; }
+  .profile img { max-width: 120px; }
+  .sidebar h1 { margin: -0.3rem 0 0.4rem; }
+  /* No dividers on phones; spacing alone sets the credentials apart */
+  .sidebar .degrees {
+    grid-column: 1 / -1;
+    margin-top: 1.25rem;
+    padding: 0;
+    border: 0;
+  }
+  .degrees p { margin: 0; }
+  .sidebar .title { white-space: normal; line-height: 1.5; font-size: 0.95rem; }
   /* Phone browsers can't reliably show a PDF inside a page; the buttons above open it instead */
   .cv-preview { display: none; }
 }
