@@ -29,7 +29,14 @@ body {
   line-height: 1.6;
   color: var(--text);
   background: var(--bg);
+  /* Pin the footer to the bottom of tall windows instead of leaving empty space under it */
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
+
+main { flex: 1 0 auto; width: 100%; }
 
 h1, h2, h3 { line-height: 1.2; }
 
@@ -136,7 +143,7 @@ footer {
   text-align: center;
   color: var(--muted);
   font-size: 0.85rem;
-  padding: 2rem;
+  padding: 1.25rem;
   border-top: 1px solid var(--border);
 }
 
